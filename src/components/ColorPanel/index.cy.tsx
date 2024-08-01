@@ -17,7 +17,6 @@ describe("<ColorPanel />", () => {
         alpha={colors.alpha}
       />
     );
-    //funcionando assim
     cy.get('[data-cy="color-panel"]').should(
       "have.css",
       "background-color",

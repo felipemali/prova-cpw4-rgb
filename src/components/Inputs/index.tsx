@@ -2,12 +2,6 @@ import { useState } from "react";
 import ColorPanel from "../ColorPanel";
 import styles from "./styles.module.css";
 
-type colorsType = {
-  name: string;
-  color: number;
-  set: React.Dispatch<React.SetStateAction<number>>;
-};
-// { colors }: { colors: colorsType[] }
 const Inputs = () => {
   const [redState, setRedState] = useState<number>(0);
   const [greenState, setGreenState] = useState<number>(0);
@@ -52,7 +46,6 @@ const Inputs = () => {
               value={value}
               onChange={(e) => {
                 const value = Number(e.target.value);
-                console.log(`${name} value:`, value); // Log para depuração
                 set(value);
               }}
             />
