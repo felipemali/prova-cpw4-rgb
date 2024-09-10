@@ -8,7 +8,7 @@ const Inputs = () => {
   const [blueState, setBlueState] = useState<number>(0);
   const [alphaState, setAlphaState] = useState<number>(1);
 
-  //prova-felipe
+  //prova-felipeee
 
   const colors = [
     {
